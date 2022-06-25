@@ -156,7 +156,7 @@ h1, h2, h3, h4, p {
 /* Header contact */
 
 .header-link-contact {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -246,6 +246,18 @@ h1, h2, h3, h4, p {
 
 .advantages-item {
     width: 270px;
+}
+
+.advantages-icon-box {
+    display: flex;
+    margin-bottom: 30px;
+    height: 120px;
+    background:var(--secondary-bg-color);
+    border-radius: 4px;
+}
+
+.advantages-icon {
+    margin: auto;
 }
 
 .advantages-subtitle {
