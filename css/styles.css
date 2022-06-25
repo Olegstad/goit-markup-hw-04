@@ -8,6 +8,7 @@
     --secondary-text-color: #757575;
     --accent-text-color: #2196F3;
     --title-text-color: #FFFFFF;
+    --social-icon-text: #AFB1B8;
 
     /* bg-colors */
     --main-bg-color: #FFFFFF;
@@ -323,7 +324,7 @@ h1, h2, h3, h4, p {
 
 .team-tank {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .team-name {
@@ -339,6 +340,43 @@ h1, h2, h3, h4, p {
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-text-color)
+}
+
+.team-social-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 32px 30px;
+    width: 206px;
+    height: 44px;
+}
+
+.team-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+    fill:var(--title-text-color)
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--accent-bg-color);
+}
+
+.team-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-icon {
+    margin: auto;
+    fill:var(--social-icon-text)
 }
 
 /* Portfolio section */
