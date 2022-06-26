@@ -67,7 +67,7 @@ h1, h2, h3, h4, p {
     padding-right: 15px;
 
     /* временно */
-    outline: solid 2px tomato;
+    /* outline: solid 2px tomato; */
 }
 
 .section {
@@ -502,14 +502,23 @@ h1, h2, h3, h4, p {
     background-color: var(--title-bg-color);
 }
 
+.footer-container {
+    display: flex;
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
 .footer-logo {
     display: block;
     margin-bottom: 20px;
     font-family: var(--logo-font);
     font-weight: 700;
+    font-style:normal;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
 }
 
 .footer-contact-link {
@@ -531,4 +540,51 @@ h1, h2, h3, h4, p {
     font-style: normal;
     line-height: 1.71;
     color: var(--title-text-color)
+}
+
+.footer-social {
+    margin-top: 12px;
+}
+
+.social-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.footer-social-box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+    fill: var(--title-text-color)
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--accent-bg-color);
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-icon {
+    margin: auto;
+    fill: var(--social-icon-text)
 }
