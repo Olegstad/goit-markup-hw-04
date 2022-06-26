@@ -67,7 +67,7 @@ h1, h2, h3, h4, p {
     padding-right: 15px;
 
     /* временно */
-    /* outline: solid 2px tomato; */
+    outline: solid 2px tomato;
 }
 
 .section {
@@ -377,6 +377,43 @@ h1, h2, h3, h4, p {
 .team-social-icon {
     margin: auto;
     fill:var(--social-icon-text)
+}
+
+/* Clients section */
+
+.container-clients {
+    text-align: center;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-icon-text);
+    border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-icon {
+    margin: auto;
+    fill: var(--social-icon-text)
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-text-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-text-color);
 }
 
 /* Portfolio section */
