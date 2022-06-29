@@ -158,6 +158,7 @@ h1, h2, h3, h4, p {
 
 .header-link-contact {
     display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -267,14 +268,12 @@ h1, h2, h3, h4, p {
 
 .advantages-icon-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     height: 120px;
     background:var(--secondary-bg-color);
     border-radius: 4px;
-}
-
-.advantages-icon {
-    margin: auto;
 }
 
 .advantages-subtitle {
@@ -340,7 +339,7 @@ h1, h2, h3, h4, p {
 
 .team-tank {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 
 .team-name {
@@ -352,6 +351,7 @@ h1, h2, h3, h4, p {
 }
 
 .team-position {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -360,10 +360,8 @@ h1, h2, h3, h4, p {
 
 .team-social-box {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 0 32px 30px;
-    width: 206px;
-    height: 44px;
 }
 
 .team-social-link {
@@ -391,7 +389,6 @@ h1, h2, h3, h4, p {
 }
 
 .team-social-icon {
-    margin: auto;
     fill:var(--social-icon-text)
 }
 
@@ -407,6 +404,8 @@ h1, h2, h3, h4, p {
 
 .clients-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid var(--social-icon-text);
@@ -418,7 +417,6 @@ h1, h2, h3, h4, p {
 }
 
 .clients-icon {
-    margin: auto;
     fill: var(--social-icon-text)
 }
 
@@ -511,8 +509,12 @@ h1, h2, h3, h4, p {
     color: var(--secondary-text-color)
 }
 
-.projects-item:hover,
-.projects-item:focus {
+.projects-link {
+    display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -526,6 +528,7 @@ h1, h2, h3, h4, p {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-address {
@@ -562,10 +565,6 @@ h1, h2, h3, h4, p {
     font-style: normal;
     line-height: 1.71;
     color: var(--title-text-color)
-}
-
-.footer-social {
-    margin-top: 12px;
 }
 
 .social-title {
@@ -608,5 +607,5 @@ h1, h2, h3, h4, p {
 
 .footer-social-icon {
     margin: auto;
-    fill: var(--social-icon-text)
+    fill: var(--title-text-color)
 }
